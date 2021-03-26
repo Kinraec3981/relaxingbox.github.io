@@ -1,0 +1,44 @@
+.box1{
+	width: 200px;
+	height: 200px;
+	border: 5px solid black;
+	background: lime;
+	transition: 1.5s;
+	top: 100px;
+	position: relative;
+
+
+
+}.box1:hover{
+	transform: rotate(720deg);
+	background: cyan;
+	border-radius: 50%;
+	animation-name: bounce;
+	animation-delay: 2s;
+	animation-duration: 6s
+	
+}body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+	animation-name: an;
+	animation-delay: 6.5s;
+	animation-duration: 3s;
+	
+}@keyframes bounce{
+	10%{
+		width: 250px;
+		height: 150px;
+
+	}20%{
+		width: 150px;
+		height: 250px;
+		
+	}30%{
+		width: 200px;
+		height: 200px;
+	}
+}
